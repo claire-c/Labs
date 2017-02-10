@@ -64,3 +64,33 @@ end
 def add_string_as_number(first_number, second_number)
 return first_number.to_i() + second_number.to_i()
 end
+
+# def test_volume_of_cube()
+  # volume = volume_of_cube(3)
+  # assert_equal(27, volume)
+# end
+
+def volume_of_cube(volume)
+return volume ** 3
+end
+
+#Given the radius of a sphere calculate the volume
+# def test_volume_of_sphere()
+  # volume = volume_of_sphere(10)
+  # assert_equal(4188.79, volume)
+# end
+
+def volume_of_sphere(sphere_radius)
+answer = Rational('4/3') * Math::PI * sphere_radius ** 3
+return answer.round(2)
+end
+
+# def test_fahrenheit_to_celsius()
+  # result = fahrenheit_to_celsius(0)
+  # assert_equal(-17.78, result)
+# end
+
+def fahrenheit_to_celsius(result)
+answer = result - 32 * 0.5556
+return answer.round(2)
+end
