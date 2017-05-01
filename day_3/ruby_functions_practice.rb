@@ -70,8 +70,8 @@ end
   # assert_equal(27, volume)
 # end
 
-def volume_of_cube(volume)
-return volume ** 3
+def volume_of_cube(volume) # This should be length_of_side and not volume
+return volume ** 3 # the variable should be length_of_side
 end
 
 #Given the radius of a sphere calculate the volume
@@ -91,6 +91,6 @@ end
 # end
 
 def fahrenheit_to_celsius(result)
-answer = result - 32 * 0.5556
-return answer.round(2)
+answer = result - 32 * 0.5556 # variable should be celsius to make it clearer
+return answer.round(2) # variable should be celsius 
 end
